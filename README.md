@@ -9,6 +9,9 @@ The demo performs the following
 - Uses file api
 - Lints the repo
 
+## How it works
+The runloop package will 
+
 See [platform.runloop.ai](https://platform.runloop.ai) to setup your accunt and inspect deployments, invocations, and devbox logs.
 
 ## Trigger an invocation of a RL function
