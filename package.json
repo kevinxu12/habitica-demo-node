@@ -1,0 +1,21 @@
+{
+  "name": "demo_node_app",
+  "version": "1.0.0",
+  "description": "A demo node app for our new Node lambda functions",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "esbuild": "esbuild ./runloop/* --bundle --platform=node --target=node16 --outdir=build"
+  },
+  "author": "Alexander Dines",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.9",
+    "@runloop/runloop": "^0.0.3",
+    "dotenv": "^16.4.5",
+    "ts-proto": "^1.178.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.5",
+    "esbuild": "0.21.5"
+  }
+}
