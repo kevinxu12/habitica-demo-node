@@ -1,10 +1,10 @@
 import { RLFunc } from "@runloop/runloop";
 
-let gh_token = process.env.GH_TOKEN;
 
 export const useDevbox = RLFunc({
   id: "useDevbox",
   run: async function (request, { systemCoordinator }) {
+    let gh_token = process.env.GH_TOKEN;
     console.log(`TOKEN: ${gh_token}`);
     let devbox = await systemCoordinator.createDevbox(undefined, undefined, [
       "curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -",
