@@ -10,8 +10,8 @@ export const useDevbox = RLFunc({
       "curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -",
       "sudo apt install -y --no-install-recommends nodejs libkrb5-dev",
     ]);
+    await devbox.execTool.exec(`env`)
     console.log("Devbox created: ", devbox.id);
-
     await devbox.execTool.exec(
       `GH_TOKEN=${gh_token} gh repo clone HabitRPG/habitica ./code -- --depth=1`
     );
